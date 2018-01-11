@@ -66,6 +66,12 @@ app.get('/bad', (request, response) => {
     })
 });
 
+app.get('/project', (request, response) => {
+    response.render('project.hbs', {
+        pageTitle: 'Project on Github'
+    });
+});
+
 
 
 app.listen(port, () => {
